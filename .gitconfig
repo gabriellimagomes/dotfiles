@@ -1,0 +1,19 @@
+[user]
+	email = gabriel.lima.ads@gmail.com
+	name = Gabriel Lima Gomes
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+	ph = push origin HEAD
+	df = diff -b
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%an, %cr)%Creset' --abbrev-commit --date=relative
+	fu = fetch origin
+	pum = pull origin master
+	fupum = !git co master && git fu && git pum
+	cob = !git fetch origin && git co -b $1 origin/$1 && echo \"Checked out origin branch:\"
+	cod = "!git br -D $1 2> /dev/null; git cob $1"
+	rebasemaster = !branch=\"`git branch 2>/dev/null | grep \\* | awk '{ print $2 }'`\" && echo \"Rebasing $branch from master...\" && git fupum && git co $branch && git rebase master
+[core]
+	editor = vim
