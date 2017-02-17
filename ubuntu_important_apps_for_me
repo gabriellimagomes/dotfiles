@@ -11,3 +11,5 @@ xclip
 gnome-tweak-tool
 maven
 gradle
+tmux
+tmuxinator
