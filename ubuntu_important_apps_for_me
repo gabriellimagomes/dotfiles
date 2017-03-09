@@ -13,3 +13,6 @@ maven
 gradle
 tmux
 tmuxinator
+nodejs
+nodejs-legacy
+npm
