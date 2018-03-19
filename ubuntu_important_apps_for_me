@@ -1,18 +1,53 @@
-openvpn
-git
-zsh
-gnome-shell
-mysql-server
-vim
-silversearcher-ag
+#Useful apps
 vlc
+
+#Related to Network
+openvpn
+apt-transport-https
+ca-certificates
+curl
+software-properties-common
+
+#Docker
+  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+  sudo apt-key fingerprint 0EBFCD88 (only to verify the fingerprint)
+  sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+  sudo apt-get update
+  sudo apt-get install docker-ce
+
+#DB
+mysql-server
+dbeaver-ce
+  sudo add-apt-repository ppa:serge-rider/dbeaver-ce
+  sudo apt-get update
+  sudo apt-get install dbeaver-ce
+
+#Java
 openjdk-8
-xclip
-gnome-tweak-tool
+
+#Package managers
 maven
 gradle
+
+#Gnome
+gnome-tweak-tool
+gnome-shell
+
+#Git
+git
+
+# Related to Bash/Editors
 tmux
 tmuxinator
+zsh
+vim
+silversearcher-ag
+xclip
+
+# For Node
 nodejs
 nodejs-legacy
 npm
