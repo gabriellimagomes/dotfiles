@@ -15,5 +15,6 @@
 	cob = !git fetch origin && git co -b $1 origin/$1 && echo \"Checked out origin branch:\"
 	cod = "!git br -D $1 2> /dev/null; git cob $1"
 	rebasemaster = !branch=\"`git branch 2>/dev/null | grep \\* | awk '{ print $2 }'`\" && echo \"Rebasing $branch from master...\" && git fupum && git co $branch && git rebase master
+	cane = commit --amend --no-edit
 [core]
 	editor = vim
