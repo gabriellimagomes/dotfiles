@@ -20,10 +20,9 @@ software-properties-common
 
 #DB
 mysql-server
-dbeaver-ce
-  sudo add-apt-repository ppa:serge-rider/dbeaver-ce
-  sudo apt-get update
-  sudo apt-get install dbeaver-ce
+sudo add-apt-repository ppa:serge-rider/dbeaver-ce \
+  && sudo apt-get update \
+  && sudo apt-get install dbeaver-ce
 
 #Java
 openjdk-8
